@@ -1,0 +1,3315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ArmyBuilder.exe" version="1.10.0.0" publicKeyToken="0000000000000000" language="de" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="app.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Launcher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="16384">
+      <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UG0s9O21VKUpH4Bxmxg5x5Fd6di7CvNvGVWFbAVsScY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="app.ico" size="360414">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gVXUnS6yHrhfYGeQdH8NIV0PT2WnoyMaThLuQpiV3YU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ArmyBuilder.deps.json" size="32660">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cjQD5Tx3/JT1R5kPo2nGxuQSKY93wyUimdUfBLsj7+k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ArmyBuilder.dll" size="524288">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FUM6oeJlmmTwX4XUgzr/GxZHkXGSdyxQgeqlkvxdrGI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ArmyBuilder.exe" size="510976">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1FTFsFCU1PL69+ah1Wf7h25wBXVt77TdkPWkxkSZFtk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ArmyBuilder.runtimeconfig.json" size="515">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ia0epcnCC2smZUfvJ8CuOEDKtWQtPCrt8GtwJiRWcd0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Dapper.Contrib.dll" size="62976">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vxbWI0LETFo1zSJLAU3/8nL+1ovymmrOPqZ0wlSEgmE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Dapper.dll" size="245760">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eE0Vup/JXN8EnJJ0FkhrFetP/KcHGV7xqzJBO38i+Xw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="db\0001_schema.sql" size="9257">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0fcq0I7vGbL7RQkh9lrSn8Lyz0hsVxQwxMGthV1kGYI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="db\0002_data.sql" size="456525">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4hPyw74L0dC/LSKZTUzIH7v6wGsSkQ5A18L0m8oxRE8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="db\0003_army.sql" size="47916">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cphPElIM4puaFKRSpKb/xW1eWNEaGq1n80ercH/if/U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="dbup-core.dll" size="114688">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q22jarNVlKJZ2BuxBamE8MwUjUrX+Ni9zYYxgvm32xI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="dbup-sqlite.dll" size="23552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>llOKslk+qaMoz/PNW2iR2ennCdtX2mahxXbBzv/izE8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="EntityFramework.dll" size="4977744">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6tusYE7+HqAnLRKF9I41hUGXiqHRmO8EILDlIseTuLQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="EntityFramework.SqlServer.dll" size="591440">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vivNycD/SihlyOUpb2o8h8IkEf8mjl7/MP3PX4slYeI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Assassin.jpg" size="875584">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O3cASvREDfrU5vP8+Juqg9HINVaWqlbwRhidbcwuPtE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Bestienmeister.jpg" size="905994">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P4aZbpyScwnk7XXqeOR0/QZfULsJra5gaPhftvE1hEg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Blutkessel.jpg" size="872158">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>we+YQNfKJ23WM9OHyS44X6nQUwCrqZnwwc5bLTlqthU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Champion_mit_Schwert.jpg" size="859527">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DVzl1fu8N6hNUA4lbzkZVeZ+5bUeHxtNgIiGn3oZSrg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Dunkelelfenkrieger_Plasitk.jpg" size="864174">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R1/2zUn22ouH2DZ6weHo6xwdrIk+2X8gUMaRETQfMdI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Echsenritter.jpg" size="866303">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hX6AAYwzPNaUk1LKm5SWkbPszDhmvfqC1itzvlKy8Zc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Echsenritter_Champion_mit_Lanze.jpg" size="882773">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9A+wV+1t/NaVFOWSVfniR3YbjcgU1SBEvhOHaTXD5G8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Echsenritter_Champion_mit_Schwert.jpg" size="876692">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0NNkU7H3Kbinz0ejATZ3zZ4whHHFeEyXbCgT4rq2lnk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Echsenritter_Standartentraeger.jpg" size="882693">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7A00lRrR3PegGI8lkKi278VoOxIkVFEz8wA9C/8HfJ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Harpie.jpg" size="887821">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vXXRo/sYNtdKjwTbmBHgt6BU1rdttgPfUYp3hZEu1nQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Hexenkriegerin.jpg" size="877279">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>r+B9jwOVS59kHA41Hhq8YxLfItP9gCT5w6VWPvQmgsU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Hexenkriegerin_Champion.jpg" size="907249">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QSD/XFuW5F6eYO9bQ3pjvN6wR76mbdsi7SkQvPfREU8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Hexenkriegerin_Musikerin.jpg" size="864470">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yZLdAIunfbcapZ2Mw4qXOPeWt1rMa/UbNN3njHxdbz0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Hexenkriegerin_Standartentraegerin.jpg" size="870594">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XK2VqoQx1ZkPVn+zeIgphDLGL3OZ0T3dmvLUziXAljk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Morathi_Die_Hexenkoenigin_auf_Pegasus.jpg" size="861490">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c6OtwCnd2J39L8SNr2FTvQiVbBW6EBLE5Yaa7OjRt1I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Musiker.jpg" size="875855">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>u8yAx56193P+h+Lv2PrUuq9o6pGlPtTe3lFwqWPxhoo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Rakarth_Bestienherrscher_von_Karond_Kar.jpg" size="890109">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Vlkt3xy4EG69/vph2A/jfmDJiuvRgjqQveNfZawA+Jk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Repetier_Speerschleuder.jpg" size="888670">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bJ8YFLahr5Re2v33P5pWJPAJA1PM4vSN7YQaiLyIDRg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Schwarze_Garde_von_Naggaroth.jpg" size="886530">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ImD9bzCi+Pukik5E9PO8BOm+0GhDO+rgKODfgJMfJnw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Schwarze_Korsaren_original.jpg" size="882137">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5V9tv8CrF0slmNUloxCIYun9rCD1Yfzfhjv207zUSGU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Schwarze_Korsaren_selbstgegossen.jpg" size="862697">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>56obaeMzwxWw+nUgnyEYiMomlCQm2NAT4slhbEE4rN0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Schwarzer_Reiter.jpg" size="871510">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pe8YdQAewnhk3ybHcnGiAGJ6KeJgV94y70z4k9a09IU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Schwarzer_Reiter_Champion.jpg" size="884272">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i+XqCiaJlzHn6DhtGrBlr/Y1KGkuxeVfSVM1fQmwRz0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Schwarzer_Reiter_Standartentraeger.jpg" size="885836">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>++2oBAdqQ26UJOA5yQKUgcbP4UYkLxT6HVBl4xlLEsI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Stadtgarde.jpg" size="887111">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qbn+Ds0LZ/D43C/1pqZmxmmzzBILlrYm61sMDd43V+g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Standartentraeger.jpg" size="859387">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i2dYCUx4gUEgK07vsFA2ShzFo6DdbC7GRrnceMm4buI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Streitwagen.jpg" size="884406">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dzCC/Bf5Thc9B4SmJW83ju/R/6a4UYdlwW7LAZfbxeo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Zauberer_mit_Stab.jpg" size="871536">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OJTP5OCkDjEEfjEc9zueGLLNxpLjjOTZXpT1ewgeR7s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Zauberin_mit_Schwert.jpg" size="907813">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U9+Roju6OHW7WBhQjM2EG8710kWsqbw0RB+MIDxWNDo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\DarkElves\DarkElf_Zauberin_mit_Stab.jpg" size="881016">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kj4ydKDcJI7I225sstjcCIot+sGWUrL9auuYTOk5eZ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Bugman.jpg" size="881102">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>M5pyAmwAMqPXG6LaEeDveb/mQpGH2QG6zWsEv+UxgKs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Bugman_Champion.jpg" size="901993">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eue6Rgdf4NmLyAQ+bA7CZah1uLValcDwdsJJKTpTElM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Bugman_StandardBearer.jpg" size="874726">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>J9YzNl62/nQFJmWjpH4itWx0lgclwXNaFMdiRtBSKpM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_BurlokDammnison_GildenmeisterDerMaschinisten.jpg" size="864380">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8DrIMY+7pxvkuLkDsHGQyh4BWNAxdwUd7BX8RXSTH8U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Catapult_3rd_Party_1.jpg" size="888112">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LOIX4iJrCBUfWDf760d82ZWoDGqCTxMATRFTB94zMlM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Catapult_3rd_Party_2.jpg" size="887289">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ETkmCmDLiq/UMKh58KaBj9oKkEZyCJtAqBY4jWYYRSI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Crossbowman.jpg" size="901077">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm2wIcc0QAo2AxCnuE4qC5F9TyDku7HOq1N66ORAnXo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_DaemonSlayer.jpg" size="896795">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WEzySiR8vu3RFZiGaQ0O7Yio9doWzZonfi8gtzzi+Ik=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_DragonSlayer.jpg" size="906147">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VNRuBu9sFRpX87dBJH2Yj7GkiJPobdBlXzrKP3SbUNw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_DrunkenMiner.jpg" size="871987">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UrursOB+doWddBM89HInN+3lkiZQFqgDRqr9xUl0V20=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Fighter1_Axe.jpg" size="902612">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hcvuYO0zKjPNCdYQ54AWXGwzTXR5QAzDybzLtDhWifw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Fighter2_DoubleHanded_Hammer.jpg" size="903392">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zbpux0ABE8aRmyAzn7tXR26xnIMf8qjbGf4H8dT7P/M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Fighter3_Hammer.jpg" size="895415">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b1xLudupJbZQrUqt4s72y92D0dkvRdR0zGQD7DcjCYI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Fighter4_Sword.jpg" size="1156571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IFLcxce8xSKs3vxp0ZGhxl5uK23r8o/gWqbkJSN8A8I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Flammenkanone.jpg" size="862408">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/KyC2g7F2Cjx3Jj7Qbq1wnDWIDiyKPM5JkEXZh4kqXc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_GiantSlayer1.jpg" size="894261">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PMI8X/ruwj4kank2PBG0H1y9tAK3X0NXEAMKY/2SzOM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_GiantSlayer2.jpg" size="899698">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>thxT81pdqBgz+T4JMTeFXuwi7CqmnQ3aBD4ThUW+42A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_GotrekGurnisson_FelixJaeger.jpg" size="881941">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2PSghEr0OhXRaUQQM3k2GiBDzy/IPWSVPeAKLHz0bHY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Hammerer.jpg" size="889327">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yJuOTA9iE6IJzi8NE6OVSUWfp+D9MKM+Z+l66xzZtL8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Hammerer_Champion.jpg" size="908473">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b6Ge2rJNXLn2rW7CV5MWf/d4DxSOEqMdW/en2SC7nic=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Hammerer_DoubleHanded.jpg" size="882923">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ALex3xPMApPCjf6COqdDHQpph0lwHgEA1V3LyN/W/Z4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Hammerer_DoubleHanded_original.jpg" size="909417">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A9cK+oavo24XW5CEdakN2VlnrcUkhAUB/lyrrNktdiY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Hammerer_Musician.jpg" size="905231">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aC69yU7ClwsZs6GADwAxOcGWcuIW7ilCJSEeGo2M7Sg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Hammerer_StandardBearer.jpg" size="867906">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ocKgLNxkRKJ41h3oGsOM+Xn3+o0ZI2phrAM/6GRp11I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_HochkoenigThorgrimGrollbart.jpg" size="872192">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pTZbHIXDTb6xfvBL0s+lRwhrsf+YsVVCt3d6THuJ2i8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_IronBreaker.jpg" size="867317">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AAVmQ5n3TWT+mDYZ8c2xwrQEO6k/+IysQYizT9blNBg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_JosefBugman.jpg" size="879967">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2r8Plm3T8n9WNdq89gh1eGwB6PsS4l++rQxWqOAYYak=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Kaempferin.jpg" size="898162">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R4psz7olB+UhmqendzWZNWZq52VEX+xdtnMcVez0QNM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Kanone.jpg" size="861888">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jJUrZMGG2MmlEBaLBgMnxdNvJx6iO0Utn1h/D0iHrS0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Katapult.jpg" size="858615">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>96alr8463oRx4eZs411qZRcWimcKHaSLzp+tqBwSI80=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_KoenigKazadorVonKarakAzul.jpg" size="882652">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zm7sMpHHFcFda71J9ITNHccRJ8wfWhxvuTJziLdOXdc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_LongBeard.jpg" size="909087">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2zOlQ7DagjZ9t7ocfsmFrjJSMa/cRB47W2QskTwCXuo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_LongDrong.jpg" size="874179">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WTO9yF7Ff2wxx1ppqF+6vxb+PcNN3WF5UPuiw+TEMMQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_LongDrong_Musician.jpg" size="873955">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p0wZ6VpaX6hS27X6fknfEcqNgANVNRxO0LeJGaFrxgY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_LongDrong_StandardBearer.jpg" size="867674">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WxfSUigu4DwYAPRaymMVYaZqhQ5Y9aSnBZSemfGzI/o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_LongDrongs.jpg" size="875988">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>H7EHhz1gfG2Ha4IwAbeUiAJIWtkLiJOahg9SjLz7Os0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Miner.jpg" size="875203">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oARzgViccOx+vdvKPf1KfnSCY73JPJPWghKDMQql2D8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Miner_Champion1.jpg" size="906783">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i0OiV65KDVF15N0g1aSdMR1QzDwyCsOiNWlYPkKS8Hs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Miner_Champion2.jpg" size="904548">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hzPNHYp9Y2ugVZY/tASsR3xyPz1rXU8INnuicy9Q4VM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Miner_Musician.jpg" size="903390">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fVoT2w8JhC48OxPt6/rd1kf9LVUXjOI/QQuS1ZYPomE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Miner_StandardBearer.jpg" size="886724">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1na0gzefgPFjte8k6jQQo7mxAjB7HpnlTxL5bY+Mnlc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Musician.jpg" size="895922">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iQhXHTk5M2QGhbW+BCoY4oLeHBHgiz1OI/p3Ap+lx7Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Musketeer.jpg" size="872414">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yZwlOY0q/MQeDYQi0MTIpsD+MY5HC3OO4EtxH2wZd1o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Orgelkanone.jpg" size="877016">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JN/kWwGPYcOjfDJ6b7cmaXvaYqFHBrEWMUukXZDv72U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Runenamboss.jpg" size="889440">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TK1x8VxhOB+ScF71dY5kRKKkikOEatiXqleB4TTH7h8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Runenmeister.jpg" size="854158">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YfYGvxLJCEzEhf17HGmDUuIBqnUHc7lpCjbFsQm+Xas=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Runenschmied.jpg" size="908412">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0QB801lIl2hfcjqnx4Ou78h749PKJV+BuzKg8rPa0yE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Spearman.jpg" size="869284">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t5vnKyOez7rqj0ClVl/CnUVrDSPCuEW8nq6H39dHqbo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Speerschleuder.jpg" size="860051">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eStTf/He7iyv+OIQtmgtNrgz5ylzCeSz2BTiT7VfwXM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_StandardBearer.jpg" size="871829">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+TiG0TVCVawOKjQ0PoxEZWM5CsrNJ2yxfbM+lKHUd88=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_TrollSlayer_Musician.jpg" size="896216">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cpyfNVSD1hOjyz5zuUI7hOvUVhQqSFoBLwEx/IMAt/w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_TrollSlayer_original.jpg" size="883136">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vbPGTX1r30HeavBMHSIr7KSSonp3xL5LFDTTpQQqNXI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_TrollSlayer_Selfmanufactured.jpg" size="885830">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JEqtugDusrxGM/fggGsYbuggVcef/OOcNWBVK4HsVzk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_TrollSlayer_StandardBearer.jpg" size="888434">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zS1o8f/22w5yjWvWnlPQxOSY8JOzK3BszLHlNumrzmA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_UngrimEisenfaust_SlayerkoenigVonKarakKadrin.jpg" size="879180">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q/Qn1G8JTpkGePYWVtxw4s+91tsTLXRD4kR8RaJCfbc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_Warrior.jpg" size="871165">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BrCzHsE1VL/BHFzi3x+rAku3GVqtQQhE6y7YX/QKQKQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Dwarves\Dwarf_WhiteDwarf.jpg" size="893713">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2ID1Ia9ceJ/G+teezdBh2UqiGASvV1wRSv3mboIIU0k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Armbrustschuetzen.jpg" size="896446">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4TIiZWz/BI5VAXW8nIj+yw1x3teKEc3m7I0HeMyFex0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Armbrustschuetzen_bemalt_gelb.jpg" size="2630421">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kH/0dIaX5S2XyK5PQUDp3N3fFBsNidq/Xc/0NUM0lEo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_berittener_Amethystzauberer.jpg" size="898485">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t3Z5fZac1wEOpf32yrsL4Wfe3GGECWTL+n4J/e6vGQI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Bernsteinmagier.jpg" size="897518">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m2keYcLF8Oue3Nt7fp29hFRlqlOKzovz0a85DPW0TaQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Bogenschuetzen.jpg" size="904681">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x2AWIMaS0SG0SHAcoaU381ARkjP0WFne+s33s3KjfIs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Bogenschuetzen_bemalt.jpg" size="2740391">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SkQdDkiOCLHD0MiMJdMuq8R/cBnbqxXSjBQ89aTPn2w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Champion_bemalt.jpg" size="2630163">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZwjODIP/uRgOHU0soIchlzDXtmMg3BSHIi6ztyIgZno=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Champion_in_schwerer_Ruestung.jpg" size="900291">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tGFTSBSdzW3oqeDdMJ0HTLNanV/kINOllgMpo9EPnME=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Champion_mit_Schwert.jpg" size="895593">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tiPs3di9NWZhpUFTLCNWVLbEKtcKD2hXEB1Zg3wZwxU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Champion_mit_Schwert_und_Pistole.jpg" size="903312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oUaswfiLZNYD3XffD9JSSFGjjqlSH5cAp2YrUG9bFqc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Champion_Reichsgarde.jpg" size="896461">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KEILXAbLeR59Gqei7PBmLr7OLYnW9OJjsDHMavEODXc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Eiskoenigin_von_Kislev.jpg" size="900290">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>D5JEBDzZgccusZ931l1/lQyOquPFHWwVsEll8D4EO5c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Flagelanten_orginal.jpg" size="870820">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QxRrsnBlWgnLZkAK/V+jxo41XyDkSBfG5V9tdwIr8cM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Flagelanten_selbstgegossen.jpg" size="871933">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ORermJOynmrJ835aiibYuzw7Y7E0k4/HJjLnmB6LKh0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Greif.jpg" size="875889">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WdUGvnmRLxNYoNc5x9glcHTNvAzir2G3phEW5VitrfM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Grosskanone_bemalt_Plastik.jpg" size="2703341">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p8gGTFpY2+CflukLXtHa1ZccjM4CA1Wa+U+K0hPVv14=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Grosskanone_bemalt_Zinn.jpg" size="2766696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JQQSmO8c7fGbZnn5jgF2e6xJQxFhIAFkQtL0Fir6hTY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Grossmeister_der_Ritter_des_weissen_Wolfes.jpg" size="2756685">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xJTLR+SraWcGu1I8KHAS0m4thJSvyEEQHSyEj+Km/eE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Grossmeister_des_Sonnenordens.jpg" size="903496">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>n7IZiAyCTwRqeYTWZh/NKPfnyBDFmGV6UEYc5iu/30M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Grosstheogonist.jpg" size="876976">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cM12ruskPZJmFQDqsEk4fa3k81dBZ3jQFXQ2oX6WI+E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Halbling_Bogenschuetzen.jpg" size="907957">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+l/rXzMfegzkz7awVWTFjEI1XsIpHpjZXzgUz+6ohW4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Halbling_Bogenschuetzen_selbsgegossen.jpg" size="871320">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aKAQfLayepOBFaPp0DRN3jMYr0AKoOr0MV26C+hbRnk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Halbling_Champion.jpg" size="903936">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>I51EPpMrqLoJF+bXM2uUOAFxbr382kKNiRJb9CpjsZM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Halbling_Musiker.jpg" size="904358">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RnSkc0ELBZ5Tgly2HQaiUe1MKAHFlCqCtZfRxsk9skk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Halbling_Standartentraeger.jpg" size="897936">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LHEQfxwH0iJe6pvih4oC97fAdf4KXcjWzK9DSImfIm4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Halbling_Suppenkatapult.jpg" size="867347">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ERN/5VB8tFKaNmDcGvrK6OkoZm40CSG9Q13J31Vsj2M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Hauptmann_der_Ritter_der_Reichsgarde.jpg" size="909814">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KIKvvthVd5Ki9qrQ7I5v1swm6TG0JMCli3CQY+OW50o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Heiliger_Patriarch_der_Magierorden.jpg" size="866231" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>F7KEQjuMGHEg/CXvuEGqmCa5LK5DmdKWEUtx2j+d42Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Heiliger_Patriarch_der_Magierorden_bemalt.jpg" size="2656633">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q650OxQlHjVWnwvVT7SQ0w1CUZi9ojJWuKLC/1AxRJI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Held_beritten_mit_Lanze_und_Hammer_bemalt.jpg" size="2546315">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>J8BK0J1XWbzUyAc8AiDJyc8wwt3JUEqv9RzvXUL/EeA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Held_beritten_mit_Lanze_und_Schild_bemalt.jpg" size="2683061">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tCk7iTIgkL0HGV5Qh0iyXoFch0NtyrgTqBpspmypSec=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Hellebardentraeger_bemalt.jpg" size="4157580">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FyIfc3jOemrcMSqLPyvXV6lwrcBFV1CjX/wPTHU3KJo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Hellebardentraeger_bemalt_blau.jpg" size="2715254">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>79uNKJNWrqyAlh1O+q40usQMFYk293r0FzsB6wCU9Uo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Hellebardentraeger_Fremdfirma.jpg" size="872124">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+N2wYbzu18L4fvvIn5lxYky3s+o2UcqaS4cJNWxph3E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Hellebardentraeger_original.jpg" size="905679">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>n2RBEpdg9YPmy9XqTgI02aluMWRj5COrTAuXFmUM4mU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Hoellenfeuersalvenkanone_bemalt.jpg" size="2840083">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8f5XwLiOxN5DXpVRL8RffOKvTIAr4G5PZK0uHjIWCIE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Imperator_Karl_Franz.jpg" size="864254">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>g0PdhoGW46GN9ioYmcLVu7JuECM9FuL7Cl8Cnqwz6vY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Infanterist_Schwert_und_Schild.jpg" size="873550">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>puHQzABo3j6z9T/Q2eiWKEasQYdC5m7DJexYglK2Sdw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Kislev_Bogenschuetzenreiter.jpg" size="906706">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VUBy5opF1G2rg7M7cM1rzJqVylyIsjxnrlnbK8sjYes=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Kislev_Bogenschuetzenreiter_mit_Schwert.jpg" size="909238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ymE3u+XDSbRB8+6JT7Rx9cuXfauH9i3C/F36iupth5Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Kislev_Standartentraeger.jpg" size="895988">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p38Fxqh/0gdfiB1CJz2Pgztwbyj8iP8wALmnbzulA+0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Kriegswagen.jpg" size="835775">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NKBqTQBBE8lWLfEqpNFhg8QLsWweLGNes/3agYPDoPU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Kurfuerst_von_Averland.jpg" size="898195">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YM/CywDv3R6bRNOU876aNDAgxDlB7BNi2hlUamoQP9Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Kurfuerst_von_Hochland.jpg" size="896959">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Hfllt7NComyrBQ08nj7KXT9uMW+Gc18rUm2AmGWCgCw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Kurfuerst_von_Middenland.jpg" size="907900">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>G88MjXb8JQrISI8dg648hYw1M4PsiB9Dd/MS+EDzKbs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Kurfuerst_von_Ostland.jpg" size="896578">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UQIepLndtrweRUhI85wi8qWqawnlhUWqsT1XYTyYcLk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Lichtmagier.jpg" size="896968">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>emGneEmm4aAoepjQ7fNPLWPiwKu76VhlAq7ROSnXSq8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Ludwig_Schwarzhelm.jpg" size="906612">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uoIQhabfy9M9+mfkx3jIP+YpIrEsWxWaPtjHZ+0ehFA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Magier_beritten_mit_Schwert_und_Zauberstab_bemalt.jpg" size="2709914">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Hxt0k3N0uFDbMhNBVtAzzkh+WA0Z7MdynYM2EUJfJek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Moerser_bemalt.jpg" size="2706060">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gbF1MeQ1K5FHrt1pJtQvvUne8ltKKh+nFEFVC/qhWs4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Musiker.jpg" size="895973">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>klwxxlnUF9o5vo8yBBR7usO+Zl1T67KyOa3fkl3FH4Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Musiker_bemalt.jpg" size="2686350">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wT8vJl6iQMzqVMks2qBmESY23fgPDEd3ou79FX8C5Dg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Musketenschuetzen_bemalt_blau.jpg" size="2685037">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EGRxB9N/EmfY7XgjD5YWK5K5U7LIIThFwK/pyzMVkns=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Musketenschuetzen_bemalt_gruen.jpg" size="2625478">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KtJ65TRn4+YJ3K7iZsmOPutFTgXfUYPsz3JpobWqcUc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Nebelmagier.jpg" size="897796">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ma8T/OmAR5QoOoehxRtPk17HguLbVep7p6hMAxhYytI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Nebelmagier_bemalt.jpg" size="2643839">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>niCrd0RIaAaLIwPeM2SAQ2doC3sPoqoZ/Vpf2GVHdAA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Pistoliere.jpg" size="872806">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oZrHkdDVFDKrQ8BPN34yL82Z0lf601sDU7w1HFhHdKs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Reichsgarde.jpg" size="880312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CR4W+Otmow6ajQIJhYF1SNLSDae0vXyHfI3VlPDy5b4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Ritter_des_Sonnenordens.jpg" size="883835">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X0BXEMYsDaxg2c3wEfQsCxF9CywpvBvxg1PHTSuKcRo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Ritter_des_Sonnenordens_Standartentraeger.jpg" size="870151">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LyZ8Esc275bTPikRVxWBw9G8T0N6gPuNPw8ojwHv+z8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Schwertkaempfer_Fremdfirma.jpg" size="890948">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>48mqrte7wNbjO64zLp+0oT+PQrFm08KmICOGG/aCckM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Schwertkaempfer_ohne_Schild_bemalt.jpg" size="2737443">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zYHGKU+kmZ334a1G2uJWvWyu+D4bhLJEHhIUIwghEEs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Schwertkaempfer_original.jpg" size="867915">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XWK86Aj+QaN+UVPjkOQEW7ltAkp5JEaQPsMB85yqp90=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Speertraeger_bemalt.jpg" size="2798367">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>f4u6qCzarb/yE63Zi+mYDQDaXTxwq35VljJlMliughI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Empire\Empire_Standartentraeger.jpg" size="900245">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4GGw5kYibXqqdqLL8L6uaUfTULQsMSFkW0fZL/q/GIk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Alarielle.jpg" size="826141">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WLTl7ySTJ9Ax76vnUbVlH6MZfrUkl47tn8j1YYFCbU0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Belannaer.jpg" size="837600">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3uRQsByvl4CiLFrwhyIcWHnpksIN9mjwOlIVKOSqeeg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_BorderRider.jpg" size="842507">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>S60ww5hBduxGEEH57i3FUR31aE6QpHaNGTLprLMvRGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_BorderRider_Fighter.jpg" size="831017">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fkvKOCRIIWvP9Qz/QpIwYOwCw97Tfv1rHUCkU3F4fZY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_BorderRider_Musician.jpg" size="832874">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sBGT21ciqgxMXPg8j3XV9we2DSSwciN/9YTokzP2Z28=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_BorderRider_StandardBearer.jpg" size="838896">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1tbytpX9LTwgHQMBSEFWkcACWZnaKWhVXpMwcJuLsBw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_BowMan.jpg" size="828972">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tWVMnz5kRre0qCHeLGC405RTlfM2I5GDFu5EoixtQ5A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_BowMan_Plastic.jpg" size="1054723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HqIdga3nCGErukzyALU+zOBlbRMpbfpv3n8A7wimcVA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Champion_with_Sword_bemalt.JPG" size="3651435">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gj0+Df3CzSjG8Y4lIZIpcCyjEHQrHJwy8PPtCS+kr08=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Chariot.jpg" size="893828">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>khIx6T/nbFhyAgJ9SRvzA9qndOovgXxd6uf6g4FTruo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Dragon.jpg" size="845080">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vLGde0o3T4sz8Dl0VLvZI46QWXKEmHOqT6T5+Ia2AoY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Dragonprince.jpg" size="856386">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R3S7ipOt/OIxQXXrjmvuhFtHsV0Rx8JJJtvMASfzVWU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Dragonprince_Fighter.jpg" size="833340">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GCenOY5vOWg1YKFHLyscsphfavlaRtRlfVxbBEGZDdU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Dragonprince_StandardBearer.jpg" size="878566">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>J0DWWhw/DpN8iXPHJvr5YsPxVG8X9jYVwq5ajSlOwIA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Eltharion.jpg" size="897483">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BEwFlgvvBBBW4kxbNboFQD9L/StumSF/BEDMmMaTJeE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Fighter1_Sword_Shield.jpg" size="825151">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yGjYNRkiCkpTZGwlZ8CiUbKgas02yhrOwU4jVgb4GfI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Fighter2_Sword_Dagger.jpg" size="812465">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QgXQKUIIo4eIkKvtX52nTNP5RunnEw9mqFJC1mSPa84=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Fighter3_Sword_Bow.jpg" size="830369">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T8zX0tOXsuezcMsFCzOAJHrgeAyt2iu9a3cVQBICuww=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Fighter4_Pegasus.jpg" size="863051">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gbz7h8HjoIB7HL3CZJe3qQ37MnyMe46xshGlWtzLBA0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_GiantEagle.jpg" size="828652">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9mippHPeDfYZM7RQrTvac4xuf3jo6EiaaZ80Nx4Thkc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Korhil.jpg" size="823991">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nScJ6eqVb9LEpPTSEwkTzp5p8MBjVXG2idBwuZ5Msn0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_MaidenGuard.jpg" size="825524">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Qg+WGhabk4+cOcywi6FLySWWZ7m9D7Bu5l/5JlEUlMc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_MaidenGuard_Musician.jpg" size="805708">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rxunOIXUhokxEqvUvi5HTUAw2ss5N6tUKm+scNDuJNM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_MaidenGuard_StandardBearer.jpg" size="820741">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SgSdLZ6NjvWMZGWGg2FMjblwtKJcXzIGdosDzt/oqY4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_MaidenGuard2.jpg" size="1071955">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yUBkOO9gUoby9ganghXBKaWgNoh/1iQ0GiaIEvC4lsA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Musician.jpg" size="821528">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4aO3G/Sz/WwfzfEWfdSFjRWHRjygeHzfMBmCz1c3hmQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_PhoenixGuard.jpg" size="844426">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sKPkkzD4BxiCdZHRLKfHg4Pt5nTo0q0dHWCJYFAn2N0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_PhoenixGuard2.jpg" size="1092450">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NEYQoMAN/UaJMLFSc12rwmdwjzvHeY3Y2wUeadjJkQg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_PrinceImrik.jpg" size="882845">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OuEcpY2bLjaR44qDyVjNveZORvGvDJnp9my1niIryb4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_RepeatingBolter.jpg" size="840317">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ft/UHPzJjCLYvsT7A1LyLeghFeEnw+u1C5nfJpPC29U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_RepeatingBolter_bemalt.JPG" size="3650950">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qbzxV585p0Vi5khN8xEwObCZJF0CHZ0il8SnlAfeUmA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SeaGuardOfLothern.jpg" size="840176">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TG2jK7DGzVetaujGXDFcmBo91RskcjrWATBDmTo+MDc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SeaGuardOfLothern_bemalt.JPG" size="2901076">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RS6rrA/ZDXnrWdbRdegXM10kd+VThnNIYSBZklh7g0g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SeaGuardOfLothern_Champion_bemalt.JPG" size="2712686">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PktQH8aDLNfEnsiU05e7n++IFb7+zRi8pH/lfm1CSLo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SeaGuardOfLothern_Musician.jpg" size="833054">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>r+SVbZO7Mpx4EwtCpMttcA2bbL1DVD8SfULSNVoJV1Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SeaGuardOfLothern_Musician_bemalt.JPG" size="2708285">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1WGJ1STmA4FxsdcVsvff2dv44+nmjcrS8kPD8ZAo9AU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SeaGuardOfLothern_StandardBearer.jpg" size="805722">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mSpltw0JHYMkb7kCwqRjsl3cdRERw89bJOBQ0xe1l40=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SeaGuardOfLothern_StandardBearer_bemalt.JPG" size="2792049">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dzdKuoztYRQkcM8KCSmiOMk37eKBgq1SiVXs2AzPCuM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SeaGuardOfLothern2.jpg" size="1086703">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RWCTSLu0LWG9weKCBFcHZDOaJ/t3CCTe94VdRXSjhOA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_ShadowWarrior.jpg" size="869979">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>khCyVcG/Ui7Gu3jpkDgurpKw04Nk9fcap5+DA+iAKx0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_ShadowWarrior2.jpg" size="1119292">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vz23ab8UpjRsJHXRR/deCRfp8/6kbnW3KXQelq64Cck=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SilverHelm.jpg" size="859930">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>acNbrCq1iVC+rcCvExusN5Jmp7PPIBlvy2uSxWe9cxA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SilverHelm_StandardBearer.jpg" size="842043">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MuSJqe2bdCuql08gkaBNnu98Bd8TEsa5RMhBujMrHGc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SilverHelm2.jpg" size="1109483">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aKRr0tHlG8jUusF6vrOr1V2g//4XKZUfjcqPYLfl/CU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SilverHelmFighter.jpg" size="835439">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U5B6XuEs8lK0z9CZFw4qkdK5HSnntJfeRp8Ag7oE7gQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SpearMan.jpg" size="815151">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m07AMKQwjux5rL2zgS0vSKaq00vHhlsJ4uR+5116aVA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_StandardBearer.jpg" size="859308">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oN/bzmsFU7sGVden9ZlMru0naL2qyr+9uYXVy8ln3mE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_StandardBearer2.jpg" size="1107572">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WoRfSDXSgM0dUWU7w6jrEImvYzkK+8ckB6moon7tNnE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_SwordMasterOfHoeth.jpg" size="839096">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EkPHwgiJ2SDduM3BFPUQ3SzMS6gcyagOEAeApio7nKc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Teclis.jpg" size="849861">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8Ed4LfNi/RvWPva6eGf5x1hIhDhuHe6SE9Qobh0m7V4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_TwinBlade.jpg" size="1103278">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KOoFKS1+9bW1G7351jSNAgUHQFVArIs932NSdc6FLzk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Tyrion.jpg" size="844521">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>V0QQtHx9lyZEE6byeTfv/AQB6qOXDK6fZzMcxe1LW3I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_WhiteLion.jpg" size="833450">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7W6JiItLNbzvfQdKIJvL/8ZgO/DzRfVPKFZcKCesglE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_WhiteLion_Fighter.jpg" size="814969">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sjhhKdvfnjQf9oC5DcxDqMqCj/NXfYYFII1rHrUD8Kg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_WhiteLion_Musician.jpg" size="813482">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dM4ytScwRgp2s+xEuFgkMzcwMhu0XC53waNlJoFLnFk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_WhiteLion_StandardBearer.jpg" size="831778">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dElq4LiKFI2SGIJqXWEpM0pwMVt8BreZhNgwElEGYOs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Wizard1.jpg" size="830165">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x5xewWF4RAZfHVEAwR3JhvZBD6O8yp2J5vEynZtktig=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\HighElves\HighElf_Wizard2_Horse.jpg" size="833503">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A9nLAqzM0OI+F6jMG6fNIlN3N+FPkKCjvX7cmKVq93Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Azhag_der_Vernichter.jpg" size="865956">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0j42ArtTKgkPjhpZrb+6D0tUzvOBdi+oJP94j2Fv/ks=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Champion_mit_Axt_und_Schild.jpg" size="864197">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dZ8/MDKRylv4A4nHLbEBCv6SuCrgZRfJ/2pmOpTh9do=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Flusstroll.jpg" size="867895">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BuaM/3Wwo+pL1trBO8ZIWmv4GBTJYViWXHXP3cS/Mv0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Goblin_Speer_Plastik.jpg" size="866344">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UnQoIMUOJqBne8ZjLGfaRleAl5tjXHPZ85bol+g5wDM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Goblin_Streitwagen.jpg" size="851878">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Og/JQs73rNfPxDHj3TmS3FNH5yeAsL6RYuyKrKuo8Ks=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Goblinbogenschuetze_Plastik.jpg" size="872575">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TGFZruRDgv42TLAEXqBad+YD25jWZTh+CFhIJvelitw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Golbin_Fremd_Plastik.jpg" size="869729">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t0t5sGGbMujt8cy5GDRyCLMaB7GNgGnVfbQdCxBhAy4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Gorfang_Rotzahn.jpg" size="906181">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xolEVPJFe5i/VNQmRMLREfDPTdJ+oWOLKGZhPAvueRQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Grobgitz.jpg" size="863847">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wQ7Wqmm3jqx/yEdFpNlRK7jMXXkRLweAiHNFCWV9j+4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Grobgitz_selbst.jpg" size="859128">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ND/MRUyfp4ApMgvdOs1W/QFChi5NGUgBxca0T6IYkqA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Grom_der_Fettsack.jpg" size="882655">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>51SJKPM7H6Z59WZ9u3Sh45Gs7bv18hqNGkZMkaBX+2o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Kamikaze_Katapult.jpg" size="870326">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fDyfK45kSW8rICdruODUQy/PpAtFKM+4wYC09uZsvgM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Morglum_Knochenbrecher.jpg" size="876849">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ac8shfIQ/RP/ShbL44fet/z92EesS9JkNxspxXZL5I0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Bogen_Plastik.jpg" size="863806">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PXL2rdV3KStVEiGvs07TSakF3/FbL2KQuspk/k9y+XQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Champion.jpg" size="819126">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SDcssXASaUMxZBS3LJqbcKH0s/NFdlrrl3f78ehtJdU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Champion_Plastik.jpg" size="897592">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HHVdmf8Hs9pJSFtrYM11/5aGvwYpvEa0yemS3glVRY0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Musiker.jpg" size="840680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QQEz+8piRY/p2ZhGZhGoD99dKGSFCFHKSKexXSyYs30=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Musiker_Plastik.jpg" size="891991">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JY+5IqWzDhmtE/E/4GRz68K4xmnfpNJBxG13cdSB3Fw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Schamane.jpg" size="837478">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GRryna+vA9YxEtkX/MDoQZAfgdQM3n72bnJ4UYtB7II=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Speer_Plastik.jpg" size="874158">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NndK9KzG79l7JD5u4NhkuB5q1KmKlG2IoZV7fx5bNDg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Squigjaeger.jpg" size="876001">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KjvftTiyO2TITzioKrL4DnzssWZ3tjCKh8ijq/QAhZs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Squigreiter.jpg" size="884037">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/u2GD7A6apsvxBbsw6kV8ha24St1K5x6/fQeSLTG0GY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Standartentraeger.jpg" size="815314">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EmhsdTHOFgG89KPphrX9puAviYisFQuyTCLJ8TjI6j4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblin_Standartentraeger_Plastik.jpg" size="898702">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QqCCjQAMTaKbt2zPQnmdpO72cT+d6WYmwvA/cPBGT1A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Nachtgoblins_Fanatics.jpg" size="897775">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oh3QEqgM0DDSvvdYHocQYF0/bbqOTNEQQgfrT1FOYBY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Oger_original.jpg" size="856582">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m4zB2DXgOeqZd7H6GhWja27nuuZhifNVP/l354Nnb/U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Oger_selbst.jpg" size="859572">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uq0N3ySpX9xComhQnyOsOWQSylDey3W1ilfUwJ/RxnE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Ork_Bogen_Plastik.jpg" size="878684">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OtdbBeri6MHa3z5peJIiyzknMz5oB1so1mhxb5VrnEo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Ork_Musiker_1.jpg" size="901132">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vP+Ssuwx3y0alDyCPgvs37x9u+WDqjJ17RoyIOwl5uA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Ork_Musiker_2.jpg" size="905679">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XBsHM3dLfGm47Sf9R1wik7K8MDgEx2bUmNRvNIEWI+M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Ork_Plastik_Fremd.jpg" size="904612">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4r6Tw+Is9jPuuuoOSKfPtD9QG2XyRfSUiFDtj5zYhSs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Ork_Saebel_Plastik.jpg" size="906442">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1BCimZjOdBkI0FgAaWClRefoqvVcHEQARLGpY6LOFao=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Ork_Standartentraeger_1.jpg" size="872183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DRZn9csyDvd62KVIh0LLkFfVRoCkxjGE/zxz2q/+0aI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Ork_Standartentraeger_2.jpg" size="868561">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nEP1YUfD8tKh6zU6BmfHPnwmBOREKusgUqC4VC2G2fk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Ork_Streitwagen_1.jpg" size="167271">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2w3ghVoD+Be04FjcnnISDBfUDQBCV6jLKtlCAhO1OQw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Riese.jpg" size="866771">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YGvgSQo+RoVRCdgK1mpUVkqgNHq2FgJk65Kq1nTlL0Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Schaedelquetscher.jpg" size="880062">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aOBpeDmXqzMBloH+2E/mkCnNUH2en9ja3+LT/UgaX4I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Schamane_auf_Lindwurm.jpg" size="867150">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7BLKfz5e8Y48XeP66WRyFyWw6LrovTJZP4QleFKCzM0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Schwarzork_Champion_mit_Axt_Schwert_und_Humunkuli.jpg" size="876374">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>felAZGY0CAFN82qQ3d3My2GVeedFQ9N+7q2bsX24oCs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Schwarzork_Champion_mit_zwei_Aexten.jpg" size="865708">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c0v59VrWgqaNaikLFxAxyWUowuMcuN51Rl1FBN2hPqU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Schwarzork_Champion_mit_zweihaendiger_Axt.jpg" size="897107">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w2I8WJNet3CqnWiJTTRadHDfszxKYazrLUxuxmLGAVM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Schwarzork_Musiker.jpg" size="901445">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+0fcFk7J1xIma0Z/KczDWvE72vKYK1WY+hVVrIf7yoU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Schwarzork_Plastik.jpg" size="871181">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BQFBQQcB8dmwosLtk5U+41mdgm88yYMdpaBTCqaKKHc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Schwarzork_Standartentraeger.jpg" size="868531">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BeY0e0tcOy9xkQ9Ksr0xZ1jSpfjwrANEl3VelXHE/gs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Skarsnik_und_Gobbla.jpg" size="860840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VHLfTyq7S+LEpm4zkgkin77tmMVfhuzSQNUHFb1PmJ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Snotlingkurbelwagen.jpg" size="868498">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fdqIjLdRLImeY3pekQNNl7mJaJgKghz6iiXyrU3Qo3Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Speerschleuder.jpg" size="905668">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UnrTGwvZmN3UNXEj6S6Hsy+qr/boiYYaCLz9RS1Kf6o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Steintroll_original.jpg" size="854132">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bIJkfdJT7XfszQhIWqLAK7aOM0bpA2LlVQ4zZq80S5Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Steintroll_selbst.jpg" size="855142">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NTZD1sbvDQzoGa4nKZ2wzpaMLeujc/i3MooxnV2E390=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Waldgoblin_Champion.jpg" size="847848">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X9lFEuWocA8EnWF/BKsVKjBgLDxkWFQOz+JIA0dNOPs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Waldgoblin_Musiker.jpg" size="846537">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nc+1Uj5snmg0MkTIukuRQw/ISmM7Wl0NuwFoSY9Kr1c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Waldgoblin_Schamane.jpg" size="871520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1eIgf65ig0OyOq25oGrI0IWQQrQp9eTg6baNzsBtabY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Waldgoblin_Spinnenreiter_Saebel_original.jpg" size="864699">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aDnhtVifvwCNLiNEJN4f8dHXcv9p0yutngxjFGch6d0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Waldgoblin_Spinnenreiter_Saebel_selbst.jpg" size="867338">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oFqZqM52h0XBZtzS9lmuUJg/PO+tImcgUbIu4wRUbCE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Waldgoblin_Spinnenreiter_selbst.jpg" size="908962">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MUVH82Rg5DUQxvA1nsBlrRLpi0OixyxX7Lwe85MNtEI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Waldgoblin_Spinnenreiter_Speer_original.jpg" size="863426">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lIpW8dPXTqIIpWRs9BwztPjhMIao7Fq+37U4II60PnU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Waldgoblin_Spinnenreiter_Standartentraeger.jpg" size="885765">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jIWUBHVJ+qulB10ZanZITtPXbqk19mbWfbPT4haiyJI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Waldgoblin_Standartentraeger.jpg" size="873236">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LJy61BNccuwX8slarsP8lYzm+h9E0do+wiYfReBn4oM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Bogen.jpg" size="855655">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>COctZq/rAS04rTKms9TRnRloVyy31uY1EI6MBmWgjR4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Champion_zweihaendiger_Hammer.jpg" size="886168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XNcL7livmB8Ul1IKWzIb98OzgQLAZZZezAGLr44yOmo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Musiker.jpg" size="903404">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OGTnOzH9sQtO24k5JC01JcqhQubSAJmjbzqIFqAdmJc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Schamane.jpg" size="868964">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tajlFJSrjryCpwUDjzVWqNKQ4BlwqTHE/O/EYuJD9o8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Schweinereiter_Champion.jpg" size="898907">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TQYO1w29iIRjQiL5Qtnl+jVYk1ZJDklMwXdMBUmTBzE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Schweinereiter_mit_Keule.jpg" size="877222">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>18HHTdsaa5OZyDIrNVQy5YYzgBGk1lCGWW8zPauIcA0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Schweinereiter_mit_Speer.jpg" size="864472">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bfi8tObv49oBZ0EQ99sCqUZvjL2fqUNdmQjOqoaY9+M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Schweinereiter_Musiker.jpg" size="899358">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CRkxnhzBP26EZbxvh6BdJRhAkuhHe0kv5HlRP/QfgKU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Schweinereiter_Schamane.jpg" size="868564">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mBZ3BftREbYZauQn9+WleZx8zoMzpQi67pD6Z/VO3o8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Schweinereiter_Standartentraeger.jpg" size="893121">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0r2Fmge0/F/YCWeZ3lcTMZoRsmXNRncfetmliBveMAE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="images\Orcs\Orcs_Wildork_Standartentraeger.jpg" size="906417">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eKmw7u9lHLHV1nUa8tKWIpBWyjzol44lmZIiWcnmrzI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.Data.Sqlite.dll" size="174632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hoMbN4bZjXYpyA+uqs873IyqsY8YsuspBareZnEnV4w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.Extensions.DependencyInjection.Abstractions.dll" size="65328">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JODkPfnbChd2O27Z2Xsrh6PoNIPosrF9soLkRp1Uwcw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.Extensions.DependencyInjection.dll" size="92456">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wxn4jg/e88orL2bjMnGIaL/L5Tkle909WlObnNo0fFE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Microsoft.Extensions.Logging.Abstractions.dll" size="65184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Kea/r1zgea1NcNxUfZZgOJkqdCjfbnJghOuQEOyDdxU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="QuestPDF.dll" size="415232">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fUSB3L2BU5ps35J0dZg6xNtOSONEK0laE4sFmdpjpzA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a" size="1209768">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Glz50tFm6lLCa1dFf4Xao4NOW7hJnF5IlXlxGXCk9kY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-arm\native\libe_sqlite3.so" size="893360">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3imtcircA586Ogj+Ii7Su0aUikrO/q7ahvxX2Kt+3CQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-arm64\native\libcrypto.so" size="2725104">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9qTCmQ+qRRuhIbbG2uSFei3vO9051LC5ORcHkyyKPD4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-arm64\native\libe_sqlite3.so" size="1374696">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PXPAAkQXP4m9Jk2WBed1P/74M29Ie0/wWe8CcmHF1iM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-arm64\native\libjpeg.so.8" size="742712">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ic5kYocxNfpHen71CDpzKuTpr/XQ2CZ+LL+6X8gVaWs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-arm64\native\libqpdf.so" size="3009352">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XoMIJYQEfyioBhCiEKs95iruZfADqtL5Z4lILz6dP3M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-arm64\native\libQuestPdfSkia.so" size="6697512">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>puUsuDGes8l3+0huvIRKDeVaAYVjsv3sDZD1CBtivxI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-armel\native\libe_sqlite3.so" size="1257916">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>g4Y7LJ3Oix5Npyo4GAJd7mUGZTFJ2q0UybuBtSk7q6E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-mips64\native\libe_sqlite3.so" size="1594136">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MasE6CeSOihmSfsGCwXLUCDjk6er5ULOrcYHNd8JD5M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-musl-arm\native\libe_sqlite3.so" size="1219860">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Y1r9Q3llD3vCWZqytmBq1rrET+/A8sCQGNINDh+ChZM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-musl-arm64\native\libe_sqlite3.so" size="1335840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GEaMZ1Qa58rPNZlo+3Qn1Xl4zwqQP/tCcIquY2DZeCw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-musl-riscv64\native\libe_sqlite3.so" size="941944">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BqL6zrYTuV4pHL6Eo+wlUOGuaf/mW5eD/PVXiI8plcE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-musl-s390x\native\libe_sqlite3.so" size="1554416">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AqPTJ8N0bA6Yg+TSID1eUxHD2Y03Vd3T12cL7PfNT40=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-musl-x64\native\libcrypto.so" size="3670848">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vT8FY9UWTOS7joM6K91jDqdDGqiXHDAicwAyKb9VqUM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-musl-x64\native\libe_sqlite3.so" size="1323128">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JIaIRqpJ59AwkI1EBRp+zsDhMVUk6SvCGl9t2oFnkPY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-musl-x64\native\libjpeg.so.8" size="909048">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RLXgIv9Li8VMDoQ7s8nwDSOEX3nLgze3QjeFfgeyPsc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-musl-x64\native\libqpdf.so" size="3232096">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LYkqNxxeFdZQXAP8V2KGQIxvIXrKReYqji3VBrw5cXo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-musl-x64\native\libQuestPdfSkia.so" size="7092584">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O1NvP9L44omeQR0Jka6byVBCNUCbttdO/40TgK71VNg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-ppc64le\native\libe_sqlite3.so" size="1722360">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zP/sZBT7ASxOUjJhcrpQAGqEX2eWLYYSzsSHkKyqPRM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-riscv64\native\libe_sqlite3.so" size="955392">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oQ7mFwPMkKYGm5GfOeErlb7gciELz4LLScEZ7LYUhfA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-s390x\native\libe_sqlite3.so" size="1504352">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VHtlU6mtZbIUNmtDcmN7dyJlOIqM4NfT63WZV4OmlhE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-x64\native\libcrypto.so" size="3676360">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aL5nll/cIU8tj5IMT4zFYbvkygLUxLmMGLNmL072KOU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-x64\native\libe_sqlite3.so" size="1348440">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>llQAwj/eFqGdAAwcYGKvV38EhBD4UlOnk/Vp1VINqq0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-x64\native\libjpeg.so.8" size="889032">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7avcc0vEJUIGCIEirUNaZ5KjJWdRj/H44PnskLVeEeU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-x64\native\libqpdf.so" size="3239000">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IvjR79/oK2AQLEK2Ce9dDrp82Qerx3b0BSwTN86QtjY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-x64\native\libQuestPdfSkia.so" size="6847576">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xBV8VTTeFfWSEPnALHVZR+LuYKFEoIETcpqM7gLqU2U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-x64\native\SQLite.Interop.dll" size="3160952">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YS54DxGn849JtFBLQa4z2/6KjT5wX2QyPmWpgelyzFE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\linux-x86\native\libe_sqlite3.so" size="1416232">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qTgswovPNU0V8LbTktsNvJs9zKF1bxGxjSCdw1e8X2Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib" size="1569856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LRuYLq2q6DCr3J7bo8y+dwNjQrGa4AEXuWE2puEi2Eo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\maccatalyst-x64\native\libe_sqlite3.dylib" size="1624336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>K9uH9ASXqg10SDWuQ/lIWG/26N+GHJ+/e+Kbfz/tazk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\osx-arm64\native\libe_sqlite3.dylib" size="1554624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vqVXMRxu9R62ppg029ek4evZ02VHkM8xHZQr9qat4KI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\osx-arm64\native\libqpdf.dylib" size="2395736">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SDkTQzdkSF+ZMG+fuJ1w+Wc+gOYjizXUgyW43XZtgdo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\osx-arm64\native\libQuestPdfSkia.dylib" size="4680584">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Yb1Gfey5ve7/OFdRXhuMwG7WvmAmcfg9HjkgTCukNPU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\osx-x64\native\libe_sqlite3.dylib" size="1591680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hYGS9AibHmQ6i5chAOceF/uD3qDDUtnxYWhPbctpA0o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\osx-x64\native\libqpdf.dylib" size="2406296">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2vxxYxoS58/O40tdTFr36PoopZxze1Jo/pIhDCwKNjs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\osx-x64\native\libQuestPdfSkia.dylib" size="4903584">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qrXh+E1m/D+nG8XTXzCHXVrVFuehi9Wd4LF7/d/TZNY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\osx-x64\native\SQLite.Interop.dll" size="2284828">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w0lYH17oGpP6kWxPMxFFErQEVK2oZsAwYgyo++YEU9k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll" size="954752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cZz9Gg6hmerzDmyxV/le8aBLyarKIsyijx+tX4HO/RE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll" size="1023360">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X3nAddg5BKxkUQw9x35FmA6ji4IgTjnDkTUxv/94WFs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-arm\native\e_sqlite3.dll" size="1282560">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>L/QAxbv9fQizk+zNyeAGW1Jff+X/eQsXd504krsd5m0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-arm64\native\e_sqlite3.dll" size="1592320">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0o/3EYiwDjBIm7e+8V3S68L97ZL9nNivl84iLVz6TGE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-arm64\native\sni.dll" size="174224">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7xhFjE3Lk/a06sB+FYnPNFC/h48t1iP1009qDxsW5Xo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x64\native\e_sqlite3.dll" size="1795072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TcuyrRl9iTNV76AEJX4EjyyFD+sQeBWPS6qw97U6xF8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x64\native\libgcc_s_seh-1.dll" size="150707">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>siuVQ5elJwNXnZLbZLV4Eq9w8q/K/i50KgCcFkC57Bo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x64\native\libstdc++-6.dll" size="2409896">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DZwBqxdx30OcdfFEsthVtKxAAkPwBtFNmgQ0k95ijw0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x64\native\libwinpthread-1.dll" size="60798">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>u8vl646AbzU3WF1MmDK07hX4ZhcyilZmldfTcoqjcO4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x64\native\qpdf.dll" size="7601152">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UNIJ4Bp63EvJAJm33EmJNKpF2qXeqitH6dDyjdK3Ko4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x64\native\QuestPdfSkia.dll" size="6238720">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IDCxm+Y8WcAeHDREtOM2IpXkYi+546HmX0GPp2g+15s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x64\native\sni.dll" size="160040">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aHBcTvmrgY8pVqeOBfP+/OUBoUSHk7BztGEQvrSbR9Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x64\native\SQLite.Interop.dll" size="2005688">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ERGRbcMpoTvWJ7LNkMmyJj3pkj/Qu2BZxpxSMy82DDc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x86\native\e_sqlite3.dll" size="1453568">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0GfZ5A1LyT3z0ULhnNOpLrroZdJF5zNQIEeJKUidXI8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x86\native\libgcc_s_dw2-1.dll" size="209128">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3JTXlH9i5eMg1NlAJ3i8ADhccJfW4GNmw7lDk/PEaBo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x86\native\libstdc++-6.dll" size="2567532">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ViTy5jWde51uz2ZU1x6BBTEwwgGuMZrnxf/TlEH/Q5s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x86\native\libwinpthread-1.dll" size="72751">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P5SxOXJQeqaxztFRb8dxmSKTTwVjcytiM1qgPPGDxMc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x86\native\qpdf.dll" size="7037952">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HQ2RaMqisbGhGAGXrK2m0As+AANzlQIZcWJANwW9j5c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x86\native\QuestPdfSkia.dll" size="4888576">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YFlpso9oRqN2FI91LsdRThWaE/SgXK4Zl3Z2NjhvmiU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x86\native\sni.dll" size="136488">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FEbWsm2kmlqfNmly+J9OI2+RaVXzHdw467liF8HKzpw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x86\native\SQLite.Interop.dll" size="1592504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VTaTsVvaS793iL7gm4vTJf/k2xUWhvQyGUxY4VubTx4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SQLitePCLRaw.batteries_v2.dll" size="5120">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lKyADGuTrlCgJfJHVHeB3r4YOREQZnxeJC9R2KwYj/s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SQLitePCLRaw.core.dll" size="51200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PS7Y4YbxJPmI69tF0DVBhbQkNXviQzu6ADOrnsMb0ls=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SQLitePCLRaw.provider.e_sqlite3.dll" size="36864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YKts+i88yQe87k0MEmTVw23go9pwHb6/XvydVCzmn6I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="System.Data.SqlClient.dll" size="267136">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DHtY+dJ7Jexc/M4jndGQiJ0Xpxdjm1ULhCAa0jng4X0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="System.Data.SQLite.dll" size="446136">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+j12eCcrEN+gvj2VnwrqOKWLdcrxu6BtZ4EhjO1IliA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="System.Data.SQLite.EF6.dll" size="206520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T3y5m+1MDC4OIhqUh8dpf4yILnKI/7mTkI5ZL/9URtU=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>
